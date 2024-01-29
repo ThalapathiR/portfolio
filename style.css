@@ -1,0 +1,451 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{ 
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+body
+{
+
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.heade
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+width: 100%;
+padding: 3rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(225, 225,225, 0.3);
+  border-bottom: 1px solid rgba(225, 225,225, 0.25);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+.heade ul li 
+{
+  display: inline-block;
+  margin-left: 40px;
+  list-style: none;
+}
+.logo
+{
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.logo:hover
+{
+  transform: scale(1.1);
+}
+.heade ul li a 
+{
+  font-size: 1.8rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.heade a:hover,a:active
+{
+  color: green;
+  border-bottom: 3px solid green;
+}
+.section2
+{
+  min-height: 100vh;
+  padding: 10rem 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+.home
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+.content
+
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  text-align: center;
+  margin-top: 3rem;
+}
+.profile
+{
+  margin-top: 3rem;
+  width: 30%;
+  border-radius: 50%;
+}
+.content h3{
+  font-size: 3rem;
+  font-weight: 700;
+}
+span {
+  color: green ;
+}
+  .content h3:nth-of-type(2)
+  {
+    margin-bottom: 2rem;
+    font-size: 4.8rem; 
+  }
+  .social-icon 
+  {
+    font-size: 3rem;
+    margin-top: 2rem;
+    
+  }
+  .social-icon i:hover{
+    transform: scale(1.1);
+  }
+  .social-icon i 
+  {
+    transition: 0.3s ease;
+    color: rgb(21, 142, 102);
+  }
+  .hire
+  {
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: solid 1px green;
+    margin-top: 1rem;
+    transition: 0.3s ease;
+  }
+  .hire:hover
+  {
+    background: green;
+    color: aliceblue;
+  }
+
+ .text-animation{
+  color: green;
+    white-space: nowrap;
+   width:19ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3S steps(19 ) infinite ;
+  }
+  .anime
+  {
+    color: black;
+  }
+  @keyframes typing
+  {
+    from
+    {
+      width: 0;
+    }
+  }
+  .section3
+  {
+    width: 100%;
+    max-height: 100vh;
+  }
+  .headers
+  {
+    text-align: center;
+  }
+  .grids
+  {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2rem;
+  
+
+  }
+  .project-info
+  {
+    margin-top: 0px;
+    padding: 3rem;
+    border: 3px solid green;
+    height: 100px;
+    border-radius: 1em;
+    cursor: pointer;
+    height: 250px;
+    transition: 0.3s ease;
+    text-align: center;
+     
+  }
+.headers
+{
+  margin-top: 50px;
+}
+  .project-info:hover
+  {
+    transform: scale(1.1);
+  }
+  .abou
+  {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(204, 238, 204) ;
+    width: 100%;
+    min-height: 100vh;
+  }
+.content1
+  {
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+  }
+  .info
+  {
+    padding: 5rem;
+  }
+
+  .image
+  {
+   
+    text-align: center;
+  }
+.lefim{
+    width: 60%;
+    border-radius: 55%;
+  }
+
+  .info h3,p,button{
+    margin-top: 30px;
+  }
+  .info button
+  {
+
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: solid 1px green;
+    margin-top: 1rem;
+    transition: 0.3s ease;
+  }
+  .info button:hover
+  {
+    background: green;
+    color: aliceblue;
+  }
+
+  .contactme
+  {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(192, 245, 192);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    width: 100%;
+   
+  }
+  .contactme h1{
+    margin-top: 40px;
+  }
+form{
+ 
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+form input,
+form textarea{
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid green;
+  border-radius: 10px;
+
+}
+.sendmessage button
+{
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  border-style: none;
+  margin-bottom: 3rem;
+}
+.footer
+{
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons-imf 
+{
+  margin-top: 30px;
+}
+.icons-imf a {
+
+  font-size: 40px;
+}
+.allinfo
+
+{
+  margin-top: 10px;
+  display: flex;
+  
+}
+.allinfo h4{
+  margin-left: 5px;
+  padding: 5px;
+}
+.thala h4{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.footer ,.icons-imf a {
+  color: aliceblue;
+}       
+.you,.net,.uni,.to-do,.calcu,.forms
+{
+  text-decoration: none;
+  color: black;
+}
+@media (max-width:1285px)
+{
+  html
+  
+  {
+    font-size: 55%;
+  }
+  .grids
+  {
+    grid-template-columns: repeat(2,1fr);
+  }
+ 
+}
+@media (max-width:896px)
+{
+  .heade  ul li
+  {
+ display: none;
+  }
+  .heade .bx bx-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+  .contactme
+  {
+    margin-top: 5rem;
+  }
+}
+
+.game
+{
+font-size:100px;
+color: red;
+text-align: center;
+}
+
+/* netflix--logo */
+
+/* .netflix-stick
+  {
+    width: 7vh;
+  height: 30vh;
+  background-color: #b1060f;
+  position: relative;
+  }
+.netflix-stick:before
+
+  {
+    content: "";
+  position: absolute;
+  width: 7vh;
+  height: 30vh;
+  background-color: #e50913;
+  transform: skew(20deg);
+  left: 5.5vh;
+  box-shadow: 0 0 2.5vh -1vh black;
+  }
+.netflix-stick:after
+
+  {
+    content: "";
+  position: absolute;
+  width: 7vh;
+  height: 30vh;
+  background-color: #b1060f;
+  left: 11vh;
+  z-index: -1;
+  }
+.thing
+  {
+    width: 7.5vh;
+  height: 2vh;
+  position: absolute;
+  background-color: black;
+  bottom: -1vh;
+  transform: rotateZ(-5deg);
+  }
+  
+.thing:before
+{
+  content: "";
+  width: 7.8vh;
+  height: 2vh;
+  position: absolute;
+  background-color: black;
+  bottom: -1vh;
+  transform: rotateZ(12deg)  ;
+  left: 10.2vh;
+}
+   */
+.thing
+{
+  width: 0px;
+}
+
+
+.college
+{
+  font-size:100px;
+  color: rgb(51, 118, 118);
+}
+.netimg
+{
+  border-radius: none;
+  margin-top: 10px;
+  width: 70px;
+}
+.booky
+{
+  font-size: 100px;
+  color: rgb(89, 69, 108);
+}
+.call
+{
+  font-size: 100px;
+}
+.mail
+{
+  font-size: 100px;
+  color: rgb(153, 116, 163);
+}
+.info h2{
+  margin-top: 30px;
+}
+.info button
+{
+  margin-top: 20px;
+}
